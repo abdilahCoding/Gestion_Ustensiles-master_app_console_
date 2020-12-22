@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public abstract class Ustensile {
+ public abstract class Ustensile {
 	
 	Conection con = new Conection();
 	
@@ -38,7 +38,7 @@ public abstract class Ustensile {
 		return  "\n \t ---------------- \n \t Anne de Fabrication    : " + this.anne_de_fabrication ;
 	}
 	
-	//méthode afficherValeurTotale
+	//mÃ©thode afficherValeurTotale
 	public void afficherValeurTotale(int choix) throws SQLException {
 		int yearNow = Calendar.getInstance().get(Calendar.YEAR);
 		int yearUstentile = 0;
