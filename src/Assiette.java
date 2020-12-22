@@ -23,14 +23,14 @@ public abstract class Assiette extends Ustensile {
 	
 	
 	
-	//méthode afficherSurfaceAssiettes
+	//mÃ©thode afficherSurfaceAssiettes
 	public void afficherSurfaceAssiettes(int choix) throws SQLException {
 		double Surface = 0;
 		double valeur = 0;
 		if(choix == 1) {
 			//AssietteRonde
 			//AssietteRonde : 3.14 * rayon * rayon
-			con.Connect();
+			 con.Connect();
 			con.stat = con.conn.createStatement();
 			con.rs = con.stat.executeQuery("SELECT SUM(rayon) As sum_rayon FROM assietteronde ;");
 			
